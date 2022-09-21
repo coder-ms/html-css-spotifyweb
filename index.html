@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
 </head>
 <body>
     <div class="wrapper">
         <main>
-            <nav>
+            <nav class="navbar">
                 <div class="box-logo">LOGO</div>
                 <div class="box-info">INFO</div>
                 <div class="box-info">INFO</div>
@@ -28,8 +34,22 @@
                 </div>
             </nav>
             <section class="main-content">
-                <aside></aside>
+                <aside>
+                    <button>EFFETTUA L'UPGRADE</button>
+                </aside>
                 <section class="inner-content">
+                    <div class="menu-container">
+                        <nav>
+                            <ul>
+                                <li><a href="#">IN EVIDENZA</a></li>
+                                <li><a href="#">PODCAST</a></li>
+                                <li><a href="#">CLASSIFICHE</a></li>
+                                <li><a href="#">GENERI & MOOD</a></li>
+                                <li><a href="#">NUOVE USCITE</a></li>
+                                <li><a href="#">SCOPRI</a></li>
+                            </ul>
+                        </nav>
+                    </div>
 
                     <!-- CONTENITORE CANZONI -->
                     <div class="container debug">
@@ -44,7 +64,8 @@
                             
                             <!-- CONTENITORE NOME CANZONE -->
                             <div class="name-song debug">
-                                <p>Metal lifting</p>
+                                <p class="name">Metal Lifting</p>
+                                <p class="subtitle">Subtitle</p>
                             </div>
                         </div>
                         <!-- CONTENITORE CANZONE SINGOLA -->
@@ -52,12 +73,13 @@
 
                             <!-- CONTENITORE IMMAGINE CANZONE -->
                             <div class="img-song debug">
-                                <img src="img/metal_lifting.jpg" alt="img">
+                                <img src="img/stranger.jpeg" alt="img">
                             </div>
                             
                             <!-- CONTENITORE NOME CANZONE -->
                             <div class="name-song debug">
-                                <p>Metal lifting</p>
+                                <p class="name">Stranger Things Vol. 1(a Netfilx Original Series Soundtrack)</p>
+                                <p class="subtitle">Kyle Dixon & Michael Stein</p>
                             </div>
                         </div>
                         <!-- CONTENITORE CANZONE SINGOLA -->
@@ -65,12 +87,13 @@
 
                             <!-- CONTENITORE IMMAGINE CANZONE -->
                             <div class="img-song debug">
-                                <img src="img/metal_lifting.jpg" alt="img">
+                                <img src="img/aquietplace.jpeg" alt="img">
                             </div>
                             
                             <!-- CONTENITORE NOME CANZONE -->
                             <div class="name-song debug">
-                                <p>Metal lifting</p>
+                                <p class="name">A Quiet Place</p>
+                                <p class="subtitle">Subtitle</p>
                             </div>
                         </div>
                         <!-- CONTENITORE CANZONE SINGOLA -->
@@ -78,12 +101,13 @@
 
                             <!-- CONTENITORE IMMAGINE CANZONE -->
                             <div class="img-song debug">
-                                <img src="img/metal_lifting.jpg" alt="img">
+                                <img src="img/split.jpeg" alt="img">
                             </div>
                             
                             <!-- CONTENITORE NOME CANZONE -->
                             <div class="name-song debug">
-                                <p>Metal lifting</p>
+                                <p class="name">Metal lifting</p>
+                                <p class="subtitle">Subtitle</p>
                             </div>
                         </div>
                         <!-- CONTENITORE CANZONE SINGOLA -->
@@ -91,12 +115,13 @@
 
                             <!-- CONTENITORE IMMAGINE CANZONE -->
                             <div class="img-song debug">
-                                <img src="img/metal_lifting.jpg" alt="img">
+                                <img src="img/cure.jpeg" alt="img">
                             </div>
                             
                             <!-- CONTENITORE NOME CANZONE -->
                             <div class="name-song debug">
-                                <p>Metal lifting</p>
+                                <p class="name">A cure for wellness</p>
+                                <p class="subtitle">Subtitle</p>
                             </div>
                         </div>
                         <!-- CONTENITORE CANZONE SINGOLA -->
@@ -104,69 +129,73 @@
 
                             <!-- CONTENITORE IMMAGINE CANZONE -->
                             <div class="img-song debug">
-                                <img src="img/metal_lifting.jpg" alt="img">
+                                <img src="img/sinister.jpeg" alt="img">
                             </div>
                             
                             <!-- CONTENITORE NOME CANZONE -->
                             <div class="name-song debug">
-                                <p>Metal lifting</p>
+                                <p class="name">Sinister</p>
+                                <p class="subtitle">Subtitle</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <!-- CONTENITORE CANZONE SINGOLA -->
+                        <div class="songs debug">
+
+                            <!-- CONTENITORE IMMAGINE CANZONE -->
+                            <div class="img-song debug">
+                                <img src="img/radar.jpeg" alt="img">
+                            </div>
+                            
+                            <!-- CONTENITORE NOME CANZONE -->
+                            <div class="name-song debug">
+                                <p class="name">Release Radar</p>
+                            </div>
+                        </div>
+                        <!-- CONTENITORE CANZONE SINGOLA -->
+                        <div class="songs debug">
+
+                            <!-- CONTENITORE IMMAGINE CANZONE -->
+                            <div class="img-song debug">
+                                <img src="img/mixdaily.jpeg" alt="img">
+                            </div>
+                            
+                            <!-- CONTENITORE NOME CANZONE -->
+                            <div class="name-song debug">
+                                <p class="name">Daily Mix 1</p>
                             </div>
                         </div>
                     </div>
                     <div class="container">
                         <!-- CONTENITORE CANZONE SINGOLA -->
                         <div class="songs debug">
-
                             <!-- CONTENITORE IMMAGINE CANZONE -->
-                            <div class="img-song debug">
-                                <img src="img/metal_lifting.jpg" alt="img">
+                            <div class="img-song-rounded debug">
+                                <img src="img/youg.jpeg" alt="img">
                             </div>
-                            
                             <!-- CONTENITORE NOME CANZONE -->
                             <div class="name-song debug">
-                                <p>Metal lifting</p>
+                                <p class="name">Lana del Rey</p>
                             </div>
                         </div>
                         <!-- CONTENITORE CANZONE SINGOLA -->
                         <div class="songs debug">
-
                             <!-- CONTENITORE IMMAGINE CANZONE -->
-                            <div class="img-song debug">
-                                <img src="img/metal_lifting.jpg" alt="img">
+                            <div class="img-song-rounded debug">
+                                <img src="img/einaudi.jpeg" alt="img">
                             </div>
-                            
                             <!-- CONTENITORE NOME CANZONE -->
                             <div class="name-song debug">
-                                <p>Metal lifting</p>
+                                <p class="name">Ludovico Einaudi</p>
                             </div>
                         </div>
                     </div>
-                    <div class="container">
-                        <!-- CONTENITORE CANZONe SINGOLA -->
-                        <div class="songs debug">
-                            <!-- CONTENITORE IMMAGINE CANZONE -->
-                            <div class="img-song-rounded debug">
-                                <img src="img/metal_lifting.jpg" alt="img">
-                            </div>
-                            <!-- CONTENITORE NOME CANZONE -->
-                            <div class="name-song debug">
-                                <p>Metal lifting</p>
-                            </div>
-                        </div>
-                        <!-- CONTENITORE CANZONe SINGOLA -->
-                        <div class="songs debug">
-                            <!-- CONTENITORE IMMAGINE CANZONE -->
-                            <div class="img-song-rounded debug">
-                                <img src="img/metal_lifting.jpg" alt="img">
-                            </div>
-                            <!-- CONTENITORE NOME CANZONE -->
-                            <div class="name-song debug">
-                                <p>Metal lifting</p>
-                            </div>
-                        </div>
-                    </div>
+                <!--
                     <div class="container"></div>
                     <div class="container"></div>
+                -->
                 </section>
             </section>
         </main>
