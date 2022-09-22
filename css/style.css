@@ -43,15 +43,16 @@ main{
     height: calc(100vh - 95px);
     display: flex;
 }
-.main-content{
+.main-content {
+    FONT-WEIGHT: 5;
     width: calc(100% - 230px);
-    height: 100%;
-    background-color: rgb(21, 21, 29);
+    height: 50;
+    background-color: rgb(66, 66, 66);
     overflow: auto;
-    display: flex;
+    padding-top: 80px;
 }
 .big-container{
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 .wrapper{
     width: 100%;
@@ -76,9 +77,9 @@ aside{
     justify-content: right;
 }
 .inner-content{
-    overflow-y: hidden;
+    overflow-y: auto;
     height: 100%;
-    padding-top: 95px;
+    padding: 2em;
 }
 .container{
     width: 96%;
@@ -139,7 +140,7 @@ img{
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
+ 
 .fa-circle-play{
     color: white;
 }
@@ -183,8 +184,8 @@ MENU
     color: white;
     font-size: 1rem;
 }
-
-
+ 
+ 
 /*
 ------------------------------------------
 NAVBAR
@@ -290,7 +291,7 @@ aside a{
     width: 192px;
     font-size: 0.8rem;
 }
-
+ 
 /*
 ------------------------------------------
 PLAYBAR
@@ -351,7 +352,7 @@ PLAYBAR
     color: greenyellow;
     cursor: pointer;
 }
-
+ 
 /*----- BAR CENTER -----*/
 .bar-center {
     display: flex;
@@ -366,7 +367,7 @@ PLAYBAR
     align-items: center;
     justify-content: center;
 }
-
+ 
 .song-bar{
     display: flex;
     align-items: center;
@@ -392,7 +393,7 @@ PLAYBAR
 .song-progress-slider:hover{
     background-color: greenyellow;
 }
-
+ 
 /*----- BAR RIGHT -----*/
 .song-extra-controls{
     display: flex;
@@ -416,7 +417,7 @@ PLAYBAR
 .volume-slider:hover{
     background-color: greenyellow;
 }
-
+ 
 /*
 ----------------------------------------------
 MEDIA QUERY
@@ -432,7 +433,7 @@ MEDIA QUERY
         width: calc(100% / 4);
     }
 }
-
+ 
 @media screen and (max-width: 992px){
     .container{
         width: 96%;
@@ -443,7 +444,7 @@ MEDIA QUERY
         width: calc(100% / 3);
     }
 }
-
+ 
 @media screen and (max-width: 768px){
     .container{
         width: 96%;
@@ -454,7 +455,7 @@ MEDIA QUERY
         width: calc(100% / 2);
     }
 }
-
+ 
 @media screen and (max-width: 576px){
     .container{
         width: 96%;
