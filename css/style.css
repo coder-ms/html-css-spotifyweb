@@ -54,7 +54,7 @@ main{
 aside{
     width: 100%;
     height: 95px;
-    background-color: rgba(10, 10, 10, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -205,21 +205,27 @@ PLAYBAR
 .bar-left, .bar-center, .bar-right{
     width: calc((100% - 8px) / 3);
     height: 96%;
-    padding: 2px;
-    border: 1px solid white;
+    padding: 5px;
+}
+.song-buttons i, .song-extra-controls i{
+    padding: 1rem;
+}
+.fa-shuffle, .fa-backward, .fa-play, .fa-forward, .fa-repeat, .fa-tv, .fa-bars, .fa-volume-high{
+    color: #a0a0a0;
 }
 /*----- BAR LEFT -----*/
 .bar-left {
-    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .song-played {
     display: flex;
     align-items: center;
 }
 .song-album img {
-    width: 56px;
-    height: 56px;
-    border-style: none;
+    width: 64px;
+    height: 64px;
 }
 .song-info{
     padding: 0 15px;
@@ -253,21 +259,7 @@ PLAYBAR
     align-items: center;
     justify-content: center;
 }
-.shuffle{
-    padding-right: 30px;
-}
-.repeat{
-    padding-left: 30px;
-}
-.backward, .foward{
-    padding: 0 15px;
-}
-.play{
-    padding: 0 15px;   
-}
-.fa-shuffle, .fa-backward, .fa-play, .fa-foward, .fa-repeat{
-    color: #a0a0a0;
-}
+
 .song-bar{
     display: flex;
     align-items: center;
@@ -275,16 +267,17 @@ PLAYBAR
 .song-time, .song-duration{
     font-size: 11px;
     color: #a0a0a0;
+    padding: 10px;
 }
 .song-progress-line{
     display: flex;
-    width: 90px;
+    width: 240px;
     height: 4px;
     border-radius: 4px;
     background: white;
 }
 .song-progress-slider{
-    width: 40px;
+    width: 65px;
     background: #a0a0a0;
     height: 4px;
     border-radius: 4px;
@@ -293,29 +286,8 @@ PLAYBAR
 /*----- BAR RIGHT -----*/
 .song-extra-controls{
     display: flex;
-    align-items: center;    
+    justify-content: center; 
+    align-items: center; 
+    padding: 24px 0;
 }
-.device-control-icon{
-    display: flex;
-}
-.volume-control-icon{
-    display: flex;
-    padding-left: 12px;
-    padding-right: 10px;
-}
-.device-bar{
-    display: flex;
-    width: 90px;
-    height: 4px;
-    border-radius: 4px;
-    background: white;
-}
-.device-slider{
-    width: 40px;
-    background: #a0a0a0;
-    height: 4px;
-    border-radius: 4px;
-}
-.fa-computer-speaker, .fa-volume{
-    color: #a0a0a0;
-}
+
