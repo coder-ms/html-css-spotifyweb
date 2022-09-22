@@ -92,12 +92,14 @@ aside{
 img{
     width: 100%;
 }
-.img-song img:hover{
+.img-song img:active{
     display: flex;
     height: 256px;
     width: 256px;
 }
-
+.img-song:hover .cover{
+    display: flex;
+}
 .name-song{
     margin: 0.5rem 1rem;
     width: 200px;
@@ -128,6 +130,10 @@ img{
     font-size: 2.5rem;
     display: none;
     background-color: rgba(0, 0, 0, 0.5);
+}
+.fa-circle-play{
+    padding: 90px;
+    color: white;
 }
 /*
 ------------------------------------------
@@ -177,7 +183,6 @@ NAVBAR
 ------------------------------------------
 */
 .box-logo, .box-playlist{
-    background-color: grey;
     display: flex;
     width: 200px;
     height: 70px;
@@ -192,18 +197,31 @@ NAVBAR
     visibility: hidden;
 }
 .box-info{
+    display: flex;
+    align-items: center;
     width: 200px;
     height: 40px;
     margin: 1rem;
+    padding: 0 1rem;
+}
+.box-info img{
+    width: 30px;
+}
+.box-info span{
+   color: white;
+   font-size: 1rem;
 }
 .box-crea{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: grey;
-    width:  90%px;
+    width:  92%;
     height: 32px;
-    margin: 1rem;
+    margin: 0.5rem;
+}
+.box-crea a{
+    text-decoration: none;
+    color: #a0a0a0;
 }
 .box-last{
     background-color: grey;
@@ -227,6 +245,14 @@ NAVBAR
     height: 250px;
     padding: 1px 0;
     overflow-y: auto;
+}
+.fa-plus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: white;
 }
 /*
 ------------------------------------------
