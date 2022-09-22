@@ -75,7 +75,7 @@ aside{
 .inner-content{
     overflow-y: auto;
     height: 100%;
-    padding: 2em;
+    padding-top: 95px;
 }
 .container{
     width: 96%;
