@@ -76,7 +76,6 @@ aside{
 .container{
     width: 96%;
     margin: 0 auto;
-    height: 360px;
     display: flex;
     flex-wrap: wrap;
 }
