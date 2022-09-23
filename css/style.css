@@ -45,7 +45,7 @@ main{
     display: flex;
 }
 .main-content {
-    width: 87%;
+    width: calc(100% - 230px);
     overflow: auto;
     background-color: rgb(69, 89, 112);
     padding-top: 80px;
@@ -177,13 +177,13 @@ NAVBAR
 ------------------------------------------
 */
 .navbar{
-    width: 13%;
+    width: 230px;
     background-color: black;
     flex-wrap: wrap;
 }
 .box-logo, .box-playlist{
     display: flex;
-    width: 200px;
+    width: 100%;
     height: 70px;
     align-items: center;
     justify-content: left;
@@ -198,7 +198,7 @@ NAVBAR
 .box-info{
     display: flex;
     align-items: center;
-    width: 200px;
+    width: 100%;
     height: 40px;
     margin: 1rem;
     padding: 0 1rem;
@@ -279,7 +279,7 @@ ASIDE
 ------------------------------------------
 */
 aside{
-    width: 88%;
+    width: 880%;
     height: 80px;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
