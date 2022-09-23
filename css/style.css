@@ -180,6 +180,7 @@ NAVBAR
     width: 230px;
     background-color: black;
     flex-wrap: wrap;
+    z-index: 2000;
 }
 .box-logo, .box-playlist{
     display: flex;
@@ -190,7 +191,6 @@ NAVBAR
 }
 .logo{
     width: 150px;
-    display: block;
 }
 .logo-small{
     visibility: hidden;
@@ -218,7 +218,7 @@ NAVBAR
     height: 100px;
 }
 .install, .johndoe{
-    background-color: darkgrey;
+    background-color: grey;
     width: 100%;   
 }
 .install{
@@ -279,7 +279,7 @@ ASIDE
 ------------------------------------------
 */
 aside{
-    width: 880%;
+    width: 88%;
     height: 80px;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
@@ -492,6 +492,14 @@ MEDIA QUERY
     .playbar{
         width: 100%;
     }
+    .logo{
+        visibility: hidden;
+    }
+    .logo-small{ 
+        width: 60px;  
+        visibility:visible;  
+        margin-left: -8rem;
+    }
 }
  
 @media screen and (max-width: 576px){
@@ -507,5 +515,16 @@ MEDIA QUERY
     }
     .playbar{
         width: 100%;
+    }
+    .navbar{
+        width: 230px;
+    }
+    .logo{
+        visibility: hidden;
+    }
+    .logo-small{ 
+        width: 60px;  
+        visibility:visible; 
+        text-align: center;  
     }
 }
