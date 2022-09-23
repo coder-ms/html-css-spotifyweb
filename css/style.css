@@ -155,22 +155,21 @@ MENU
     font-size: 0.75rem;
     text-decoration: none;
     color: #cccccc;
-    padding: 0.5rem;
+    padding: 1rem;
 }
-.menu-container ul li:after{
+.list-menu ul li:first-child::after{
     content: '';
     width: 20%;
     height: 2px;
     display: flex;
+    margin-left: 40%;
     align-items: center;
-    margin-left: 4rem;
     background-color: greenyellow;
 }
 .menu-container ul li a:hover{
     color: white;
 }
- 
- 
+
 /*
 ------------------------------------------
 NAVBAR
@@ -209,18 +208,8 @@ NAVBAR
    color: white;
    font-size: 1rem;
 }
-.box-crea{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    /* padding: 8px; */
-    margin-top: 1rem;
-}
-.box-crea a{
-    text-decoration: none;
-    color: #a0a0a0;
-}
+
+
 .box-last{
     background-color: grey;
     width: 200px;
@@ -238,33 +227,43 @@ NAVBAR
 .johndoe{
     height: 60px;
 }
-.play{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin: 1rem;
-}
-.fa-plus{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: white;
-}
 
-.nome-playlist{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.playlist-container{
+    overflow: hidden;
+    padding: 20px;
 }
-.nome-playlist ul li{
+.create-playlist{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 15px;
+    line-height: 37px;
+    text-decoration: none;
     color: white;
-    list-style-type: none;
-    background-color: #333333;
-    margin: 0.5rem 0;
 }
-
+.create-playlist span:before{
+    display: inline-block;
+    content: '+';
+    width: 37px;
+    height: 37px;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 35px;
+    text-align: center;
+    line-height: 37px;
+    vertical-align: middle;
+    color: black;
+}
+.playlist{
+    height: 80%;
+    overflow-y: auto;
+    padding-bottom: 20px;
+}
+.playlist li a{
+    line-height: 2;
+    text-decoration: none;
+    color: white;
+}
 /*
 ------------------------------------------
 ASIDE
@@ -350,8 +349,8 @@ PLAYBAR
     align-items: center;
 }
 .song-album img {
-    width: 30%;
-    height: 30%;
+    width: 64px;
+    height: 64px;
 }
 .song-info{
     padding: 0 15px;
