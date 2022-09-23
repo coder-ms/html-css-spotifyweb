@@ -79,7 +79,6 @@ aside{
 .songs{
     padding: 1rem;
     width: calc(100% / 6);
-    height: 320px;
 }
 .img-song, .img-song-rounded{
     position: relative;
@@ -87,8 +86,7 @@ aside{
 img{
     width: 100%;
 }
-.img-song img:active{
-    display: flex;
+.img-song-rounded img:hover{
     height: 256px;
     width: 256px;
 }
@@ -97,9 +95,7 @@ img{
     overflow: hidden;
 }
 .name-song{
-    margin: 0.5rem 1rem;
-    width: 200px;
-    height: 96px;
+    width: 100%;
     padding: 0.5rem;
 }
 .name{
@@ -142,6 +138,7 @@ MENU
     width: 100%;
     margin: 0 auto;
     flex-wrap: wrap;
+    margin: 1rem 0;
 }
 .list-menu{
     display: flex;
@@ -158,20 +155,19 @@ MENU
     font-size: 0.75rem;
     text-decoration: none;
     color: #cccccc;
-    padding: 2rem;
+    padding: 0.5rem;
 }
-.menu-container ul li a:after{
+.menu-container ul li:after{
     content: '';
     width: 20%;
     height: 2px;
     display: flex;
     align-items: center;
-    margin-left: 2rem;
+    margin-left: 4rem;
     background-color: greenyellow;
 }
 .menu-container ul li a:hover{
     color: white;
-    font-size: 1rem;
 }
  
  
@@ -217,9 +213,9 @@ NAVBAR
     display: flex;
     align-items: center;
     justify-content: center;
-    width:  100%;
-    height: 32px;
-    margin: 0.5rem;
+    width: 100%;
+    /* padding: 8px; */
+    margin-top: 1rem;
 }
 .box-crea a{
     text-decoration: none;
@@ -243,18 +239,32 @@ NAVBAR
     height: 60px;
 }
 .play{
+    display: flex;
+    align-items: center;
     width: 100%;
-    height: 250px;
-    padding: 1px 0;
+    margin: 1rem;
 }
 .fa-plus{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 24px;
-    height: 24px;
+    width: 100%;
     background-color: white;
 }
+
+.nome-playlist{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nome-playlist ul li{
+    color: white;
+    list-style-type: none;
+    background-color: #333333;
+    margin: 0.5rem 0;
+}
+
 /*
 ------------------------------------------
 ASIDE
@@ -312,10 +322,11 @@ PLAYBAR
     display: flex;
     bottom: 0;
     z-index: 2000;
+    flex-wrap: wrap;
 }
 .bar-left, .bar-center, .bar-right{
-    width: calc((100% - 8px) / 3);
-    height: 96%;
+    width: calc(100% / 3);
+    height: 100%;
     padding: 5px;
 }
 .song-buttons i, .song-extra-controls i{
@@ -339,8 +350,8 @@ PLAYBAR
     align-items: center;
 }
 .song-album img {
-    width: 64px;
-    height: 64px;
+    width: 30%;
+    height: 30%;
 }
 .song-info{
     padding: 0 15px;
@@ -433,7 +444,7 @@ MEDIA QUERY
 @media screen and (max-width: 1200px){
     .menu-container{
         margin: 1rem 0;
-        width: calc(100% / 4);
+        width: 100%;
     }
     .container{
         width: 96%;
@@ -441,14 +452,17 @@ MEDIA QUERY
     }
     .songs{
         margin: 1rem 0;
-        width: calc(100% / 4);
+        width: calc(100% / 6);
+    }
+    .playbar{
+        width: 100%;
     }
 }
  
 @media screen and (max-width: 992px){
     .menu-container{
         margin: 1rem 0;
-        width: calc(100% / 3);
+        width: 100%;
     }
     .container{
         width: 96%;
@@ -456,14 +470,14 @@ MEDIA QUERY
     }
     .songs{
         margin: 1rem 0;
-        width: calc(100% / 3);
+        width: 50%;
     }
 }
  
 @media screen and (max-width: 768px){
     .menu-container{
         margin: 1rem 0;
-        width: calc(100% / 2);
+        width: 100%;
     }
     .container{
         width: 96%;
@@ -477,8 +491,8 @@ MEDIA QUERY
  
 @media screen and (max-width: 576px){
     .menu-container{
-        margin: 1rem 0;
-        width: 100%;
+        margin: 3rem 0;
+        width: calc(100% / 3);
     }
     .container{
         width: 96%;
